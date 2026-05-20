@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Liftly Bot</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div id="app-wrapper">
+  <!-- Emotion Face Display -->
+<div id="robot-face-container">
+  <img id="robot-face" src="assests/img/neutral.jpg" alt="Robot Face" />
+</div>
+</div>
+
+
+  
+  <div class="chat-container">
+    
+    <div class="chat-header">🏋️ Liftly Bot</div>
+    <div class="chat-main">
+      <div id="chat-history"></div>
+    </div>
+
+    <div class="chat-input">
+      <input type="text" id="user-input" placeholder="Type your message here..." />
+      <button id="send-btn">Send</button>
+      <!-- 🎤 Voice Input Button -->
+      <button id="mic-btn" title="Speak your message">🎤</button>
+      <!-- weekly Button -->
+      <button id="view-week-schedule" class="week-btn">📅</button>
+    </div>
+
+    <button id="reset-btn">Reset Chat</button>
+  </div>
+
+
+  <div id="trainer-schedule-modal" class="modal hidden">
+  <div class="modal-content">
+    <span class="close-modal">&times;</span>
+    <h2>📆 Select a Day to View Trainers</h2>
+    <div class="day-grid">
+      <button class="day-btn" data-day="Monday">Monday</button>
+      <button class="day-btn" data-day="Tuesday">Tuesday</button>
+      <button class="day-btn" data-day="Wednesday">Wednesday</button>
+      <button class="day-btn" data-day="Thursday">Thursday</button>
+      <button class="day-btn" data-day="Friday">Friday</button>
+      <button class="day-btn" data-day="Saturday">Saturday</button>
+      <button class="day-btn" data-day="Sunday">Sunday</button>
+    </div>
+    <div id="trainer-display" class="trainer-grid"></div>
+  </div>
+</div>
+
+
+  <!-- JS Scripts -->
+  <script src="moodPlaylist.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
